@@ -1,13 +1,12 @@
 package com.backtracking;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
-import java.io.IOException;
-//조합 : 중복X, 순서X
+//중복조합 : 중복O, 순서X
 
-public class B15650 {
-	
+public class B15652 {
 	static int N, M;
 	static int[] arr;
 	static StringBuilder sb = new StringBuilder();
@@ -24,9 +23,8 @@ public class B15650 {
         
 		dfs(1, 0);
 		System.out.println(sb);
- 
 	}
- 
+	
 	public static void dfs(int at, int depth) {
 		if(depth == M) {
 			for(int val : arr) {
@@ -38,7 +36,8 @@ public class B15650 {
 		
 		for(int i = at; i <= N; i++) {
 			arr[depth] = i;
-			dfs(i+1, depth+1);
+			dfs(i, depth+1);
 		}
 	}
+
 }
