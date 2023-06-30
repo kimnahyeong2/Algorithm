@@ -1,6 +1,5 @@
 package com.basic;
 
-import java.io.*;
 import java.util.*;
 
 public class B1300 {
