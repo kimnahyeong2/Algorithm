@@ -14,7 +14,7 @@ public class B1865 {
     public static void main(String[] args) throws IOException {
     	TC = Integer.parseInt(br.readLine());
     	StringTokenizer st;
-    	for(int test=0; test<TC; test++) {
+    	for(int test=0;   test<TC; test++) {
     		st = new StringTokenizer(br.readLine());
     		N = Integer.parseInt(st.nextToken());
     		M = Integer.parseInt(st.nextToken());
